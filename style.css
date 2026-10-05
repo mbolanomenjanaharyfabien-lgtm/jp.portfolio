@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(42, 41, 41);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+     padding: 0.5rem 2rem;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+header nav .logo_p{
+    color: rgb(9, 88, 108);
+}
+.navigation ul{
+    margin-top: 0.5rem;
+    background: rgb(9, 88, 108);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.navigation ul li{
+    list-style: none;
+    cursor: pointer;
+    
+}
+.navigation ul li a{
+    border: none;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: wheat;
+    transition: 0.5s;
+}
+.navigation ul li a:hover{
+    color: wheat;
+    border-bottom: 2px solid wheat;
+  background: rgb(9, 88, 108);
+  border-radius: 2rem;
+}
+
+.telechargement h1{
+    color: wheat;
+    border: 2px solid rgb(9, 88, 108);
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.menu{
+    display: inline-block;
+    color: white;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    display: none;
+    cursor: pointer;
+}
+.span_bar{
+    width: 1rem;
+    height: 0.2rem;
+    margin-top: 0.1rem;
+    background: white;
+    
+}
+.menu_x{
+    display: none;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+ @media (max-width:1024px){
+    .navigation{
+        display: none;
+    }
+    .telechargement{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .menu_x{
+    display: none;
+    }
+ }
